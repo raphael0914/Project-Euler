@@ -61,3 +61,4 @@ combine m1 m2 = zipWith (*) (map ((-) 1 ) m1)  (map ((-) 1 ) m2)
 main = print . sum . foldl1' (zipWith (*)) . map ( map ((-) 1 ) . ringBell 50 ) $ vInitAll d
 
 
+
