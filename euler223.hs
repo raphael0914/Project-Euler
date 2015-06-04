@@ -1,1 +1,0 @@
-main = print . length $ [(a, b, c) | c <- [1..24998], b <- [1..(min c (25000-c))], a <- [1..(min b (25000-c-b))], a+b+c <= 25000, a*a+b*b==c*c+1]
